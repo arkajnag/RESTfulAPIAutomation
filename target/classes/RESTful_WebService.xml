@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RESTful WebService Execution Suite">
+  <test name="RESTful WebService Execution Test">
+    <classes>
+      <class name="com.qa.RESTfulAPI.TestCases.GetRESTful_WebService_UsingBasicAuthentication"/>
+      <class name="com.qa.RESTfulAPI.TestCases.PostRESTful_WebServices_Test"/>
+      <class name="com.qa.RESTfulAPI.TestCases.DeleteRESTful_WebServices_Test"/>
+      <class name="com.qa.RESTfulAPI.TestCases.GetRESTful_WebServices_Test"/>
+    </classes>
+  </test> 
+</suite> 
