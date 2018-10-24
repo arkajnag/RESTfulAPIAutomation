@@ -1,0 +1,2 @@
+This is a RESTAssured Application example.
+Jackson Databind framework and Google GSON to parse JSON data.
