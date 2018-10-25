@@ -5,11 +5,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -25,7 +23,6 @@ import com.qa.RESTfulAPI.PojoClass.Title;
 import com.qa.RESTfulAPI.TestBase.TestBase;
 import com.qa.RESTfulAPI.TestUtil.TestUtil;
 import com.qa.RESTfulAPI.WebServiceUtility.WebServiceUtilityClass;
-
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
@@ -173,14 +170,15 @@ public class PostRESTful_WebServices_Test extends TestBase {
 	@AfterMethod
 	public void tearDownTestCase(ITestResult result)
 	{
-		TestUtil.report.endTest(TestUtil.logger);
 		TestUtil.tearDownExtentReport(result);
+		TestUtil.report.endTest(TestUtil.logger);
+		
 	}
 	
-	@AfterTest
+/*	@AfterTest
 	public void tearDownExtentReport()
 	{
 		TestUtil.report.flush();
 		TestUtil.report.close();
-	}
+	}*/
 }
